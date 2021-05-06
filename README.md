@@ -11,9 +11,14 @@ Despues de clonar este repositorio, es necesario instalar:
 
 Para poder correr los siguientes programas, se necesita la terminal
 
-'''Filtros.py'''
-'''black_white.py'''
-'''bordes.py'''
-'''camara_python.py'''
-'''facial.py'''
-'''Filtro_Imagenes.py'''
+```Filtros.py```
+
+```black_white.py```
+
+```bordes.py```
+
+```camara_python.py```
+
+```facial.py```
+
+```Filtro_Imagenes.py```
