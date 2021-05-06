@@ -25,9 +25,9 @@ if __name__ == '__main__':
             break
         if img is None:
             break
-
+        img_RGB=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)    
         
-        cv2.imshow("Output", img)
+        cv2.imshow("Output", img_RGB)
 
         k = cv2.waitKey(10)
         if k==27:
