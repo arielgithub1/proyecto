@@ -1,43 +1,48 @@
 import cv2
 import time
-import argparse
+import numpy as np
 
+cap = cv2.VideoCapture(0)
+fondo = None
+ 
+while True:
 
-if __name__ == '__main__':
-    script_start_time = time.time()
+	grabbed, frame = cap.read()
+ 
+	if not grabbed:
+		break
+ 
+	img_gris = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-    parser = argparse.ArgumentParser(description='Camera visualization')
+	img_gris = cv2.GaussianBlur(img_gris, (21, 21), 0)
 
-    ### Positional arguments
-    parser.add_argument('-i', '--cameraSource', default=0, help="Introduce number or camera path, default is 0 (default cam)")
-    
-    args = vars(parser.parse_args())
+	if fondo is None:
+		fondo = img_gris
+		continue
+ 
+	resta = cv2.absdiff(fondo, img_gris)
+ 
+	umbral = cv2.threshold(resta, 25, 255, cv2.THRESH_BINARY)[1]
 
+	umbral = cv2.dilate(umbral, None, iterations=2)
 
-    cap = cv2.VideoCapture(args["cameraSource"]) #0 local o primary camera
-    while cap.isOpened():
-        
-        #BGR image feed from camera
-        success,img = cap.read(1) 
-        
-        if not success:
-            break
-        if img is None:
-            break
+	contornosimg = umbral.copy()
+ 
+	contornos, hierarchy = cv2.findContours(contornosimg,cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
-            
-        cv2.imshow("Output", img)
+	for c in contornos:
+		if cv2.contourArea(c) < 500:
+			continue
+		(x, y, w, h) = cv2.boundingRect(c)
+		cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-        k = cv2.waitKey(10)
-        if k==27:
-            break
+	cv2.imshow("Camara", frame)
 
+	k = cv2.waitKey(10)
+	time.sleep(0.015)
 
-    cap.release()
-    cv2.destroyAllWindows()
+	if k == 27:
+		break
 
-
-    print('Script took %f seconds.' % (time.time() - script_start_time))
-
-
-
+cap.release()
+cv2.destroyAllWindows()
