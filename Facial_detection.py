@@ -1,3 +1,4 @@
+#Code credits to Glare & Transductor 'www.robologs.net'
 import cv2
 import numpy as np
 import face_recognition
