@@ -30,13 +30,13 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 ```Filtro_Imagenes.py```
 
 ## Función de los códigos
-* Filtros.py:
+* Filtros.py: tenemos 6 diferentes filtros, los cuales se pueden escoger: B&W, RGB, Canny, Sobel, Laplacian y Canny_V2.
 
-* black_white.py:
+* black_white.py: nos muestra dos videos, uno a color y el otro a blanco y negro.
 
-* bordes.py:
+* bordes.py: en este tenemos 3 videos, todos nos enseñan los bordes blancos con fondo negro. Uno está muy marcado, otro apenas se ven marcados y el último se ven los bordes blancos pero no los define todos.
 
-* camara_python.py:
+* camara_python.py: abre el video con un filtro RGB.
 
 * facial.py:
 
