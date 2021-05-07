@@ -36,7 +36,7 @@ De igual manera, en la terminal hay que poner para poder usarlos:
 
 ```pip install cmake```
 
-```pip install dlib (más indicaciones en el archivo Facial_recognition.py)```
+```pip install dlib (más indicaciones en el archivo Facial_detection.py)```
 
 ```pip install Facial_Recognition```
 
@@ -52,7 +52,7 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 
 ```facial.py```
 
-```Facial_Recognition.py```
+```Facial_detection.py```
 
 ```Gorrito.py```
 
@@ -67,7 +67,7 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 
 * facial.py: un programa que detecta el rostro o los rostros de las personas en el video y dibuja un rectangulo alrededor de esta.
 
-* Facial_Recognition.py: es un programa de reconocimiento facial, el cual requiere de un imagen/foto por rostro para registrar y poder reconocer.
+* Facial_detection.py: es un programa de reconocimiento facial, el cual requiere de un imagen/foto por rostro para registrar y poder reconocer.
 
 * Gorrito.py: es un filtro el cual te pone un gorro (viene en conjunto con el archivo 'gorro_proyecto.py').
 
