@@ -38,8 +38,7 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 
 * camara_python.py: abre el video con un filtro RGB.
 
-* facial.py:
-
+* facial.py: es un filtro el cual te pone un gorro.
 
 * Filtro_Imagenes.py: este código toma 20 fotos, cada 5 fotos cambia el filtro.*** 
 
