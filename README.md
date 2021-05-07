@@ -2,6 +2,17 @@
 
 Material utilizado para el curso TC1001S.2
 
+## Creado por
+
+María Fernanda Velázquez Vergara A01634117
+
+Enrique Espinosa Acebes A01378997
+
+Ariel Iván Ochoa Ramírez A01640097
+
+Misael Octavio Rodríguez Macías A01639786
+
+Alan Ricardo Vilchis Arceo A01640260
 
 ## Instalar dependencias necesarias
 
