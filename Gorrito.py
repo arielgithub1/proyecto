@@ -38,6 +38,7 @@ while True:
         bg_black = cv2.bitwise_and(resized_image, resized_image, mask=mask)
         bg_black = bg_black[dif, :, 0:3]
         bg_frame = cv2.bitwise_and(n_frame, n_frame, mask = mask_inv[dif:, :])
+        bg_frame = bg_frame[dif, :, 0:3] ###
             
         result = cv2.add(bg_black, bg_frame)
         if y - filas_image + por_alto >= 0:
