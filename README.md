@@ -23,8 +23,6 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 
 ```bordes.py```
 
-```camara_python.py```
-
 ```facial.py```
 
 ```Filtro_Imagenes.py```
@@ -35,8 +33,6 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 * black_white.py: nos muestra dos videos, uno a color y el otro a blanco y negro.
 
 * bordes.py: en este tenemos 3 videos, todos nos enseñan los bordes blancos con fondo negro. Uno está muy marcado, otro apenas se ven marcados y el último se ven los bordes blancos pero no los define todos.
-
-* camara_python.py: abre el video con un filtro RGB.
 
 * facial.py: es un filtro el cual te pone un gorro.
 
