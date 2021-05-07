@@ -87,3 +87,5 @@ https://es.stackoverflow.com/questions/349957/convertir-una-imagen-a-escala-de-g
 https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
 
 https://robologs.net/2020/05/05/deteccion-y-reconocimiento-facial-con-opencv-python-y-facerecognition/
+
+https://likegeeks.com/es/procesar-de-imagenes-en-python/
