@@ -14,6 +14,10 @@ Misael Octavio Rodríguez Macías A01639786
 
 Alan Ricardo Vilchis Arceo A01640260
 
+## Notas
+
+En el branch llamado Prototipos se encuentran los codigos que pueden tener algunos bugs, tambien aqui se encuentran algunos codigos que fueron fusionados con otros, esto con el proposito de que repositorio se vea mas limpio. 
+
 ## Instalar dependencias necesarias
 
 Despues de clonar este repositorio, es necesario instalar:
@@ -46,12 +50,6 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 
 ```Filtros.py```
 
-```black_white.py```
-
-```bordes.py```
-
-```facial.py```
-
 ```Facial_detection.py```
 
 ```Gorrito.py```
@@ -60,12 +58,6 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 
 ## Función de los códigos
 * Filtros.py: tenemos 6 diferentes filtros, los cuales se pueden escoger: B&W, RGB, Canny, Sobel, Laplacian y Canny_V2.
-
-* black_white.py: nos muestra dos videos, uno a color y el otro a blanco y negro.
-
-* bordes.py: en este tenemos 3 videos, todos nos enseñan los bordes blancos con fondo negro. Uno está muy marcado, otro apenas se ven marcados y el último se ven los bordes blancos pero no los define todos.
-
-* facial.py: un programa que detecta el rostro o los rostros de las personas en el video y dibuja un rectangulo alrededor de esta.
 
 * Facial_detection.py: es un programa de reconocimiento facial, el cual requiere de un imagen/foto por rostro para registrar y poder reconocer.
 
