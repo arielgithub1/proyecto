@@ -30,3 +30,8 @@ Los programas hay que abrirlos desde la terminal para que funcionen
 ```Filtro_Imagenes.py```
 
 ## Función de los códigos
+* Filtro_Imagenes.py: este código toma 20 fotos, cada 5 fotos cambia el filtro.*** 
+
+        ***Nota: se necesita cambiar la dirección de la carpeta donde se quiere cambiar las fotos.
+
+## Referencias
